@@ -96,7 +96,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: ./frontend/
-          push: true
+          push: true 
           tags: ctapuh4/kittygram_frontend:latest
 
   build_gateway_and_push_to_docker_hub:
