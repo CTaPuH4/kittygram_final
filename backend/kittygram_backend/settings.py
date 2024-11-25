@@ -4,9 +4,10 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv('SECRET_KEY', ''),
+SECRET_KEY = os.getenv('adsfadfadfSECRET_KEY', ''),
+print(SECRET_KEY)
 
-DEBUG = os.getenv('DEBUG', 'False').lower() in ['true', '1', 't', 'y', 'yes']
+DEBUG = os.getenv('DEBUG', 'False').lower() in ['true', '1', 'yes']
 
 ALLOWED_HOSTS = ['localhost', os.getenv('HOST'), '127.0.0.1', 'ctapuh4-infra1.sytes.net']
 
